@@ -2,9 +2,13 @@
   .projects-grid,
   .about-grid,
   .contact-layout,
-  .case-layout { grid-template-columns: 1fr; }
+  .case-layout {
+    grid-template-columns: 1fr;
+  }
 
-  .case-info-panel { position: static; }
+  .case-info-panel {
+    position: static;
+  }
 
   .contact-stage {
     min-height: auto;
@@ -22,45 +26,126 @@
   }
 
   .bubble-a,
-  .bubble-c { justify-self: start; }
-  .bubble-b { justify-self: end; }
+  .bubble-c {
+    justify-self: start;
+  }
+  .bubble-b {
+    justify-self: end;
+  }
   body.arabic .bubble-a,
-  body.arabic .bubble-c { justify-self: end; }
-  body.arabic .bubble-b { justify-self: start; }
-  .contact-form { order: 4; max-width: none; margin: 4px 0 0; }
+  body.arabic .bubble-c {
+    justify-self: end;
+  }
+  body.arabic .bubble-b {
+    justify-self: start;
+  }
+  .contact-form {
+    order: 4;
+    max-width: none;
+    margin: 4px 0 0;
+  }
 }
 
 @media (max-width: 820px) {
   .container,
   .site-header,
-  .case-layout-container { width: min(100% - 28px, var(--container)); }
+  .case-layout-container {
+    width: min(100% - 18px, var(--container));
+  }
 
-  .site-header { grid-template-columns: auto auto; gap: 12px; }
+  .site-header {
+    grid-template-columns: 1fr auto;
+    gap: 8px 10px;
+    padding: 8px 10px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .logo-name-clean {
+    padding-inline: 0;
+    font-size: 0.88rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .theme-toggle,
+  .language-toggle {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
 
   .nav-links {
     grid-column: 1 / -1;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 6px;
     padding-top: 6px;
     border-top: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links a {
-    flex: 1;
+    flex: 0 0 auto;
+    white-space: nowrap;
     text-align: center;
-    padding: 9px 8px;
-    font-size: .82rem;
+    padding: 7px 10px;
+    font-size: 0.76rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--surface) 78%, transparent);
   }
 
-  .video-hero { min-height: 680px; padding-top: 150px; }
-  .hero-copy h1 { font-size: clamp(2.8rem, 14vw, 4.9rem); }
-  .section { padding: 66px 0; }
-  .project-page { padding-top: 150px; }
-  .project-card { grid-template-columns: 1fr; }
-  .project-media { min-height: 260px; }
-  .gravity-skills { min-height: 430px; }
-  .gravity-bubble { min-height: 42px; padding: 11px 15px; font-size: .9rem; }
-  .case-visual-grid { grid-template-columns: 1fr; }
-  .case-visual-card img { height: auto; max-height: none; }
+  .video-hero {
+    min-height: 680px;
+    padding-top: 118px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.8rem, 14vw, 4.9rem);
+  }
+
+  .section {
+    padding: 66px 0;
+  }
+
+  .project-page {
+    padding-top: 118px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-media {
+    min-height: 260px;
+  }
+
+  .gravity-skills {
+    min-height: 430px;
+  }
+
+  .gravity-bubble {
+    min-height: 42px;
+    padding: 11px 15px;
+    font-size: 0.9rem;
+  }
+
+  .case-visual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-visual-card img {
+    height: auto;
+    max-height: none;
+  }
 
   .footer-inner {
     flex-direction: column;
@@ -68,24 +153,62 @@
     text-align: center;
   }
 
-  .footer-links { justify-content: center; }
+  .footer-links {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 540px) {
-  .logo-name-clean { padding-inline: 0; }
+  .site-header {
+    width: calc(100% - 14px);
+    padding: 7px 8px;
+  }
+
+  .logo-name-clean {
+    max-width: 160px;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    gap: 5px;
+    padding-top: 5px;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+
   .hero-actions,
-  .case-actions { flex-direction: column; }
-  .btn { width: 100%; }
+  .case-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
   .theme-toggle,
-  .language-toggle { width: 38px; height: 38px; }
+  .language-toggle {
+    width: 32px;
+    height: 32px;
+  }
 
   .project-info,
   .contact-form,
   .intro-strip-inner,
   .case-info-panel,
-  .case-visual-panel { padding: 20px; }
+  .case-visual-panel {
+    padding: 20px;
+  }
 
-  .client-bubble { width: 100%; justify-self: stretch !important; }
+  .client-bubble {
+    width: 100%;
+    justify-self: stretch !important;
+  }
+
   .contact-form input,
-  .contact-form textarea { font-size: 16px; }
+  .contact-form textarea {
+    font-size: 16px;
+  }
 }
