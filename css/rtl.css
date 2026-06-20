@@ -44,3 +44,18 @@ body.arabic .bubble-c {
   left: auto;
   right: 28px;
 }
+/* Arabic header layout */
+body.arabic {
+  direction: rtl;
+  font-family: "Alexandria", "Inter", system-ui, sans-serif;
+}
+
+body.arabic .site-header .container {
+  direction: rtl;
+  flex-direction: row-reverse;
+}
+
+body.arabic .nav-links {
+  margin-right: auto;
+  margin-left: 0;
+}

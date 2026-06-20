@@ -48,26 +48,38 @@
 
 @media (max-width: 820px) {
   .site-header {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid !important;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas:
+      "empty actions logo"
+      "nav nav nav";
     align-items: center;
     gap: 8px 10px;
     padding: 8px 10px;
   }
 
+  body:not(.arabic) .site-header {
+    grid-template-areas:
+      "logo actions empty"
+      "nav nav nav";
+  }
+
   .logo-name-clean {
-    order: 1;
+    grid-area: logo !important;
     padding-inline: 0;
     font-size: 0.9rem;
     white-space: nowrap;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .header-actions {
-    order: 2;
-    margin-inline-start: auto;
+    grid-area: actions !important;
     display: flex;
     align-items: center;
     gap: 6px;
+    margin: 0 !important;
   }
 
   .theme-toggle,
@@ -77,8 +89,7 @@
   }
 
   .nav-links {
-    order: 3;
-    flex: 0 0 100%;
+    grid-area: nav !important;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -93,6 +104,36 @@
     padding: 8px 6px;
     font-size: 0.78rem;
     white-space: nowrap;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    overflow: hidden;
+  }
+
+  .project-info {
+    order: 1;
+    width: 100%;
+    padding: 22px;
+  }
+
+  .project-media {
+    order: 2;
+    width: 100%;
+    min-height: 260px;
+  }
+
+  .project-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   .video-hero {
