@@ -1,0 +1,35 @@
+body.arabic {
+  direction: rtl;
+  font-family: "Alexandria", "Inter", system-ui, sans-serif;
+}
+
+body.arabic .hero-copy,
+body.arabic .section-heading,
+body.arabic .about-text,
+body.arabic .project-page,
+body.arabic .contact-copy,
+body.arabic .contact-form {
+  text-align: right;
+}
+
+body.arabic .eyebrow,
+body.arabic .project-type,
+body.arabic .case-summary span { letter-spacing: 0; }
+
+body.arabic .hero-copy h1,
+body.arabic .section-title,
+body.arabic .project-info h3,
+body.arabic .case-info-panel h1 {
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+body.arabic .gravity-skills::before {
+  content: "اسحبي";
+  inset: 22px 22px auto auto;
+  letter-spacing: 0;
+}
+
+body.arabic .bubble-a { left: auto; right: 0; }
+body.arabic .bubble-b { right: auto; left: 0; }
+body.arabic .bubble-c { left: auto; right: 28px; }

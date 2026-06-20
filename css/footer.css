@@ -1,0 +1,25 @@
+.footer { padding: 30px 0 44px; }
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a,
+.back-to-top {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.footer-links a:hover,
+.back-to-top:hover { color: var(--ink); }

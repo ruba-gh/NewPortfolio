@@ -1,345 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruba Alghamdi</title>
+  <title>Ruba Alghamdi — UX/UI Portfolio</title>
+  <meta name="description" content="Ruba Alghamdi portfolio — bilingual UX/UI design, interface systems, prototypes, and front-end aware product work." />
+  <meta name="theme-color" content="#0d5cff" />
+  <meta property="og:title" content="Ruba Alghamdi — UX/UI Portfolio" />
+  <meta property="og:description" content="Selected UX/UI projects, design systems, prototypes, and front-end aware work." />
+  <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+<body class="arabic">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) document.body.classList.add('dark');
+    })();
+  </script>
 
-<body>
-  <header class="site-header">
-  <div class="logo">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-  <span class="icon sun"></span>
-  <span class="icon moon"></span>
-</button>
-<a class="logo" href="#home">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header page-enter">
+    <a class="logo-name logo-name-clean" href="#home" aria-label="Ruba Alghamdi">
       <span>Ruba Alghamdi</span>
     </a>
-</div>
 
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-       
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#projects" data-i18n="navWork">المشاريع</a>
+      <a href="#skills" data-i18n="navSkills">مهاراتي</a>
+      <a href="#about" data-i18n="navAbout">عنّي</a>
+      <a href="#contact" data-i18n="navClients">تواصل</a>
     </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color mode">☾</button>
+      <button class="language-toggle language-icon" id="languageToggle" aria-label="Change language">🌐</button>
+    </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">UX/UI Designer · Computer Science Graduate</span>
+    <section class="hero video-hero main-section" id="home">
+      <div class="hero-bg-fallback" aria-hidden="true"></div>
+      <div class="hero-bg-overlay" aria-hidden="true"></div>
 
-          <h1>Designing thoughtful digital experiences with a technical mindset.</h1>
+      <div class="container hero-overlay-content">
+        <div class="hero-copy page-enter page-enter-delay-1">
+          <span class="eyebrow" data-i18n="heroEyebrow">مصممة UX/UI بخلفية في علوم الحاسب</span>
+          <h1 data-i18n="heroTitle">واجهات نظيفة. تفكير واضح. حركة لها معنى.</h1>
+          <p data-i18n="heroText">بورتفوليو يعرض المشاريع من حيث الهيكلة، القرارات التصميمية، والواجهات المصقولة.</p>
 
-          <p>
-            I’m Ruba Alghamdi, a UX/UI designer with a Computer Science background.
-            I create clean, usable interfaces and understand how design decisions connect
-            to real implementation.
-          </p>
-
-          <div class="actions">
-            <a class="btn btn-primary" href="#projects">View Projects →</a>
-            <a class="btn btn-secondary" href="#about">About Me</a>
-          </div>
-        </div>
-
-        <div class="hero-panel">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-
-          <div class="floating-card card-one">
-            <span>Focus</span>
-            <strong>UX/UI Design</strong>
-          </div>
-
-          <div class="floating-card card-two">
-            <span>Mindset</span>
-            <strong>Design + Code</strong>
-          </div>
-
-          <div class="device-mockup">
-            <div class="mockup-bar"></div>
-            <div class="mockup-line wide"></div>
-            <div class="mockup-line"></div>
-            <div class="mockup-grid">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="viewWork">استعراض الأعمال</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="contactMe">تواصل معي</a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="section intro-strip main-section reveal" aria-label="Quick introduction">
+      <div class="container intro-strip-inner">
+        <p data-i18n="introStrip">أهتم أولًا بالوضوح، وبعدها الصقل، الحركة، والتفاعل.</p>
+      </div>
+    </section>
 
-    <section class="section" id="skills">
+    <section class="section selected-work main-section" id="projects">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Strengths</span>
-          <h2 class="section-title">What I bring</h2>
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="projectsEyebrow">أعمال مختارة</span>
+          <h2 class="section-title" data-i18n="projectsTitle">مشاريع مختارة</h2>
+          <p data-i18n="projectsText">مجموعة مختارة من المشاريع توضح كيف أبدأ من الهيكلة ومسارات المستخدم، ثم أحولها إلى واجهات مصقولة وقابلة للتنفيذ.</p>
         </div>
 
-        <div class="skills-grid">
-  <article class="skill-card image-skill-card">
-    <img src="assets/ux-design.png" alt="UX/UI Design">
-    <h3>UX/UI Design</h3>
-    <p>User flows, wireframes, prototypes, and clean interface design.</p>
-  </article>
-
-  <article class="skill-card image-skill-card">
-    <img src="assets/code.png" alt="Technical Awareness">
-    <h3>Technical Awareness</h3>
-    <p>HTML, CSS, Java, Swift, Python, and MySQL.</p>
-  </article>
-
-
-
-  <article class="skill-card image-skill-card" >
-    <img src="assets/product-thinking.png" alt="Product Thinking">
-    <h3>Product Thinking</h3>
-    <p>Designing around real problems, goals, and constraints.</p>
-  </article>
-</div>
+        <!-- Project cards are rendered from js/data.js -->
+        <div class="projects-grid" id="projectsGrid"></div>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section skills-section main-section" id="skills">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Selected work</span>
-          <h2 class="section-title">Selected UX/UI Projects</h2>
-          <p>
-            A collection of interface and product design projects focused on clarity,
-            usability, and user-friendly digital experiences.
-          </p>
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="skillsEyebrow">مهاراتي</span>
+          <h2 class="section-title" data-i18n="skillsTitle">مهارات تفاعلية داخل مساحة نظيفة.</h2>
+          <p data-i18n="skillsText">مساحة تفاعلية مركزة تقدرين تسحبين فيها المهارات وتحركينها.</p>
         </div>
 
-        <div class="projects-grid">
-  <a class="project-card" href="#mobile-auth">
-    <div class="project-preview">
-      <img src="assets/mobile-auth1.png" alt="Mobile Authentication Experience preview">
-    </div>
-    <h3>Mobile Authentication Experience</h3>
-    <p>A smooth and secure onboarding and login experience for mobile users.</p>
-  </a>
-
-  <a class="project-card" href="#card-match-game">
-    <div class="project-preview">
-      <img src="assets/card-match-game1.png" alt="Card Match Game UI preview">
-    </div>
-    <h3>Card Match Game UI</h3>
-    <p>A minimal and engaging memory game interface focused on clarity and usability.</p>
-  </a>
-
-  <a class="project-card" href="#bakery-shopping">
-    <div class="project-preview">
-      <img src="assets/bakery-shopping1.png" alt="Bakery Shopping App UI preview">
-    </div>
-    <h3>Bakery Shopping App UI</h3>
-    <p>A clean mobile shopping experience focused on product browsing and quick purchasing.</p>
-  </a>
-
-  <a class="project-card" href="#frog-focus-timer">
-    <div class="project-preview">
-      <img src="assets/frog-focus-timer1.png" alt="Frog Focus Timer preview">
-    </div>
-    <h3>Frog Focus Timer</h3>
-    <p>A playful productivity timer designed to improve focus and user engagement.</p>
-  </a>
-</div>
+        <!-- Skill bubbles are rendered from js/data.js -->
+        <div class="gravity-skills reveal" id="gravitySkills" aria-label="Interactive skills board"></div>
       </div>
     </section>
 
-
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
+    <section class="section about-section main-section" id="about">
+      <div class="container about-grid reveal">
         <div>
-          <span class="eyebrow">About</span>
-          <h2 class="section-title">A designer who understands how products are built.</h2>
+          <span class="eyebrow" data-i18n="aboutEyebrow">عنّي</span>
+          <h2 class="section-title" data-i18n="aboutTitle">مصممة تهتم بالوضوح، الاتزان، والتفاعل المدروس.</h2>
         </div>
 
         <div class="about-text">
-          <p>
-            I design digital products with a balance of usability, visual clarity,
-            and technical awareness. My Computer Science background helps me think
-            beyond screens and understand how design decisions affect real implementation.
-          </p>
+          <p data-i18n="aboutP1">أنا ربى الغامدي، مصممة UX/UI بخلفية في علوم الحاسب.</p>
+          <p data-i18n="aboutP2">بالنسبة لي، التصميم مو بس شكل الشاشة. الأهم هو كيف المنتج يوصل فكرته بوضوح.</p>
 
           <div class="about-tags">
+            <span data-i18n="aboutTag01">بحث تجربة المستخدم</span>
+            <span data-i18n="aboutTag02">تصميم واجهات</span>
             <span>Figma</span>
-            <span>UX Research</span>
-            <span>Prototyping</span>
-            <span>App & Web Design</span>
-            <span>Front-End</span>
+            <span data-i18n="aboutTag03">تطوير أمامي</span>
+            <span>SwiftUI</span>
           </div>
-          <a class="btn btn-primary cv-button" href="assets/Ruba-Alghamdi-CV.pdf" download>
-  Download CV
-</a>
         </div>
       </div>
     </section>
 
-    <section class="section project-page" id="mobile-auth">
-  <div class="container">
-    <a class="back-link" href="#projects">← Back to projects</a>
-
-    <h1>Mobile Authentication Experience</h1>
-    <p>A smooth and secure onboarding and login experience for mobile users.</p>
-
-    <div class="project-detail-layout">
-  <div class="carousel">
-    <button class="carousel-btn prev">‹</button>
-
-    <div class="carousel-track">
-      <img class="carousel-image active" src="assets/mobile-auth1.png" alt="Mobile auth screen 1">
-      <img class="carousel-image" src="assets/mobile-auth2.png" alt="Mobile auth screen 2">
-    </div>
-
-    <button class="carousel-btn next">›</button>
-  </div>
-
-  <div class="case-overview">
-    <h2>Overview</h2>
-    <p>
-      This onboarding and authentication flow was designed in Figma with a focus on clarity and ease of navigation. Inspired by a concept I saw on Pinterest, I illustrated the characters myself, converted them into vectors, and integrated them into the interface to create a friendly visual identity. The layout follows familiar authentication patterns and clear visual hierarchy to guide users smoothly through sign-up and login. Reusable components and simple interactions were used to maintain consistency and simulate navigation in the prototype.
-    </p>
-  </div>
-</div>
-
-    <a class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/IdQZWJLPUnZfKSnx2oz9da/hilow">
-      View Prototype →
-    </a>
-  </div>
-</section>
-
-   <section class="section project-page" id="card-match-game">
-  <div class="container">
-    <a class="back-link" href="#projects">← Back to projects</a>
-
-    <h1>Card Match Game UI</h1>
-    <p>A minimal and engaging memory game interface focused on clarity and usability.</p>
-
-    <div class="project-detail-layout">
-      <div class="carousel">
-        <button class="carousel-btn prev">‹</button>
-
-        <div class="carousel-track">
-          <img class="carousel-image active" src="assets/card-match-game1.png" alt="Card Match Game screen 1">
-          <img class="carousel-image" src="assets/card-match-game2.png" alt="Card Match Game screen 2">
+    <section class="section contact-section main-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <span class="eyebrow" data-i18n="contactEyebrow">ابدأ مشروعك</span>
+          <h2 class="section-title" data-i18n="contactTitle">خلّينا نبني شي واضح ومبهر مع بعض.</h2>
+          <p data-i18n="contactText">عندك موقع، تطبيق، داشبورد، أو مشروع UX/UI؟ أرسل التفاصيل وبرجع لك.</p>
         </div>
 
-        <button class="carousel-btn next">›</button>
-      </div>
+        <div class="contact-stage reveal">
+          <div class="client-bubble bubble-a" data-i18n="clientBubble01">“نظيف وسهل المتابعة.”</div>
+          <div class="client-bubble bubble-b" data-i18n="clientBubble02">“الهيكلة صارت منطقية وواضحة.”</div>
+          <div class="client-bubble bubble-c" data-i18n="clientBubble03">“شغل احترافي، واضح، ومدروس.”</div>
 
-      <div class="case-overview">
-        <h2>Overview</h2>
-        <p>
-          This mobile game interface was designed in Figma, inspired by a concept I discovered on Pinterest which I used as a starting point to explore game UI structure. I recreated the layout while adapting the color system and visual elements, and designed both light and dark modes to improve accessibility and visual comfort. The interface focuses on clear hierarchy, minimal distraction, and quick interaction, allowing users to easily focus on gameplay. Components and simple interactions were prototyped to simulate the game flow from start screen to win state.
-        </p>
-      </div>
-    </div>
+          <form class="contact-form" action="https://formsubmit.co/rub.gmd23@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New portfolio project inquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
 
-    <a class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/XCV4xGvHEXoIChgjCQu8rz/card-match?node-id=1-33&starting-point-node-id=1%3A33">
-      View Prototype →
-    </a>
-  </div>
-</section>
+            <label>
+              <span data-i18n="formName">الاسم</span>
+              <input type="text" name="name" placeholder="اكتب اسمك" data-i18n-placeholder="formNamePlaceholder" required>
+            </label>
 
-<section class="section project-page" id="bakery-shopping">
-  <div class="container">
-    <a class="back-link" href="#projects">← Back to projects</a>
+            <label>
+              <span data-i18n="formEmail">الإيميل</span>
+              <input type="email" name="email" placeholder="اكتب إيميلك" data-i18n-placeholder="formEmailPlaceholder" required>
+            </label>
 
-    <h1>Bakery Shopping App UI</h1>
-    <p>A clean mobile shopping experience focused on product browsing and quick purchasing.</p>
+            <label>
+              <span data-i18n="formProject">نوع المشروع</span>
+              <input type="text" name="project_type" placeholder="موقع، تطبيق، داشبورد..." data-i18n-placeholder="formProjectPlaceholder">
+            </label>
 
-    <div class="project-detail-layout">
-      <div class="carousel">
-        <button class="carousel-btn prev">‹</button>
+            <label>
+              <span data-i18n="formMessage">الرسالة</span>
+              <textarea name="message" rows="5" placeholder="اكتب تفاصيل المشروع..." data-i18n-placeholder="formMessagePlaceholder" required></textarea>
+            </label>
 
-        <div class="carousel-track">
-          <img class="carousel-image active" src="assets/bakery-shopping1.png" alt="Bakery screen 1">
-          <img class="carousel-image" src="assets/bakery-shopping2.png" alt="Bakery screen 2">
+            <button class="btn btn-primary" type="submit" data-i18n="sendMessage">إرسال الرسالة</button>
+          </form>
         </div>
-
-        <button class="carousel-btn next">›</button>
       </div>
-
-      <div class="case-overview">
-        <h2>Overview</h2>
-        <p>
-          This mobile e-commerce interface was designed in Figma to explore a clean and intuitive food ordering experience. The layout focuses on clear product hierarchy, visual emphasis on imagery, and simplified navigation to help users quickly browse items and add them to their cart. Product cards, detail pages, and the checkout flow were structured using consistent components and spacing to maintain usability across screens. The goal was to create a friendly shopping experience where users can easily discover products and complete purchases with minimal friction.
-        </p>
-      </div>
-    </div>
-
-    <a class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/hfAOG7XHDB41ZZp127LxvC/bakery-shop">
-      View Prototype →
-    </a>
-  </div>
-</section>
-<section class="section project-page" id="frog-focus-timer">
-  <div class="container">
-    <a class="back-link" href="#projects">← Back to projects</a>
-
-    <h1>Frog Focus Timer</h1>
-    <p>A playful productivity timer designed to improve focus and user engagement.</p>
-
-    <div class="project-detail-layout">
-      <div class="carousel">
-        <button class="carousel-btn prev">‹</button>
-
-        <div class="carousel-track">
-          <img class="carousel-image active" src="assets/frog-focus-timer1.png" alt="Timer screen 1">
-          <img class="carousel-image" src="assets/frog-focus-timer2.png" alt="Timer screen 2">
-        </div>
-
-        <button class="carousel-btn next">›</button>
-      </div>
-
-      <div class="case-overview">
-        <h2>Overview</h2>
-        <p>
-          This concept timer app was designed in Figma to explore how playful illustration can enhance user engagement in productivity tools. After discovering the frog character on Pinterest, I built a simple timer experience around it, using the character to communicate states like focus, stop, and completion. The interface follows clear visual hierarchy and minimal controls to keep the interaction simple and distraction-free. Components and prototype interactions were used to simulate the full flow from setting the timer to completing a session.
-        </p>
-      </div>
-    </div>
-
-    <a class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/L5vAc0dqdOeNUdmeZUI0eZ/frog-timer?node-id=2-26&starting-point-node-id=2%3A26">
-      View Prototype →
-    </a>
-  </div>
-</section>
+    </section>
+  </main>
 
   <footer class="footer">
-  <div class="container footer-inner">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/ruba-gh" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ruba-alghamdi-a92981314/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rub.gmd23@gmail.com" data-i18n="email">الإيميل</a>
+      </div>
 
-    <!-- <p>Ruba Alghamdi</p> -->
-
-    <div class="footer-links">
-      <a href="https://github.com/ruba-gh" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ruba-alghamdi-a92981314/" target="_blank">LinkedIn</a>
-      <a href="mailto:rub.gmd23@gmail.com">Email</a>
+      <a href="#home" class="back-to-top" data-i18n="backTop">العودة للأعلى</a>
     </div>
+  </footer>
 
-    <a href="#home" class="back-to-top">Back to top ↑</a>
-
-  </div>
-</footer>
-
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+  <script src="js/data.js" charset="UTF-8"></script>
+  <script src="js/theme.js" charset="UTF-8"></script>
+  <script src="js/i18n.js" charset="UTF-8"></script>
+  <script src="js/interactions.js" charset="UTF-8"></script>
+  <script src="js/home.js" charset="UTF-8"></script>
 </body>
 </html>

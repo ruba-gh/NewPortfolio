@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project — Ruba Alghamdi</title>
+    <meta
+      name="description"
+      content="Project details from Ruba Alghamdi UX/UI portfolio."
+    />
+    <meta name="theme-color" content="#0d5cff" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="arabic">
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (savedTheme === "dark" || (!savedTheme && prefersDark))
+          document.body.classList.add("dark");
+      })();
+    </script>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header page-enter">
+      <a
+        class="logo-name logo-name-clean"
+        href="index.html#home"
+        aria-label="Ruba Alghamdi"
+      >
+        <span>Ruba Alghamdi</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#projects" data-i18n="navWork">المشاريع</a>
+        <a href="index.html#skills" data-i18n="navSkills">مهاراتي</a>
+        <a href="index.html#about" data-i18n="navAbout">عنّي</a>
+        <a href="index.html#contact" data-i18n="navClients">تواصل</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle color mode"
+        >
+          ☾
+        </button>
+        <button
+          class="language-toggle language-icon"
+          id="languageToggle"
+          aria-label="Change language"
+        >
+          🌐
+        </button>
+      </div>
+    </header>
+
+    <main id="projectRoot">
+      <!-- Project detail is rendered from js/data.js based on ?id=project-id -->
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-links">
+          <a href="https://github.com/ruba-gh" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ruba-alghamdi-a92981314/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="mailto:rub.gmd23@gmail.com" data-i18n="email">الإيميل</a>
+        </div>
+
+        <a href="index.html#home" class="back-to-top" data-i18n="backTop"
+          >العودة للأعلى</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/data.js" charset="UTF-8"></script>
+    <script src="js/theme.js" charset="UTF-8"></script>
+    <script src="js/i18n.js" charset="UTF-8"></script>
+    <script src="js/interactions.js" charset="UTF-8"></script>
+    <script src="js/project.js" charset="UTF-8"></script>
+  </body>
+</html>
