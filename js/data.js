@@ -13,6 +13,7 @@ const portfolioData = {
 
   ui: {
     en: {
+      logoName: "Ruba Alghamdi",
       navWork: "Work",
       navSkills: "What I bring",
       navClients: "Contact",
@@ -81,6 +82,7 @@ const portfolioData = {
     },
 
     ar: {
+      logoName: "ربى الغامدي",
       navWork: "المشاريع",
       navSkills: "وش أقدم",
       navClients: "تواصل",

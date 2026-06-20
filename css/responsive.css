@@ -47,117 +47,58 @@
 }
 
 @media (max-width: 820px) {
-  .container,
-  .site-header,
-  .case-layout-container {
-    width: min(100% - 18px, var(--container));
-  }
-
   .site-header {
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 8px 10px;
     padding: 8px 10px;
-    border-radius: 0 0 18px 18px;
   }
 
   .logo-name-clean {
+    order: 1;
     padding-inline: 0;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .header-actions {
+    order: 2;
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
     gap: 6px;
   }
 
   .theme-toggle,
   .language-toggle {
-    width: 34px;
-    height: 34px;
-    font-size: 0.95rem;
+    width: 36px;
+    height: 36px;
   }
 
   .nav-links {
-    grid-column: 1 / -1;
-    justify-content: flex-start;
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     gap: 6px;
     padding-top: 6px;
     border-top: 1px solid var(--line);
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
   }
 
   .nav-links a {
-    flex: 0 0 auto;
-    white-space: nowrap;
+    flex: 1;
     text-align: center;
-    padding: 7px 10px;
-    font-size: 0.76rem;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--surface) 78%, transparent);
+    padding: 8px 6px;
+    font-size: 0.78rem;
+    white-space: nowrap;
   }
 
   .video-hero {
-    min-height: 680px;
-    padding-top: 118px;
-  }
-
-  .hero-copy h1 {
-    font-size: clamp(2.8rem, 14vw, 4.9rem);
-  }
-
-  .section {
-    padding: 66px 0;
-  }
-
-  .project-page {
-    padding-top: 118px;
-  }
-
-  .project-card {
-    grid-template-columns: 1fr;
-  }
-
-  .project-media {
-    min-height: 260px;
-  }
-
-  .gravity-skills {
-    min-height: 430px;
-  }
-
-  .gravity-bubble {
-    min-height: 42px;
-    padding: 11px 15px;
-    font-size: 0.9rem;
-  }
-
-  .case-visual-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .case-visual-card img {
-    height: auto;
-    max-height: none;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer-links {
-    justify-content: center;
+    padding-top: 125px;
   }
 }
-
 @media (max-width: 540px) {
   .site-header {
     width: calc(100% - 14px);
@@ -165,50 +106,24 @@
   }
 
   .logo-name-clean {
-    max-width: 160px;
-    font-size: 0.8rem;
-  }
-
-  .nav-links {
-    gap: 5px;
-    padding-top: 5px;
-  }
-
-  .nav-links a {
-    padding: 6px 8px;
-    font-size: 0.7rem;
-  }
-
-  .hero-actions,
-  .case-actions {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
+    font-size: 0.82rem;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .theme-toggle,
   .language-toggle {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
   }
 
-  .project-info,
-  .contact-form,
-  .intro-strip-inner,
-  .case-info-panel,
-  .case-visual-panel {
-    padding: 20px;
+  .nav-links a {
+    padding: 7px 4px;
+    font-size: 0.72rem;
   }
 
-  .client-bubble {
-    width: 100%;
-    justify-self: stretch !important;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 16px;
+  .video-hero {
+    padding-top: 118px;
   }
 }
