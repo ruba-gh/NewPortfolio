@@ -19,32 +19,31 @@ const portfolioData = {
       navAbout: "About",
 
       heroEyebrow: "UX/UI Designer · Computer Science",
-      heroTitle:
-        "Minimal interfaces. Clear product thinking. Motion with purpose.",
+      heroTitle: "I turn your idea into a digital experience users love.",
       heroText:
-        "A project-based portfolio focused on structure, decisions, and refined user interfaces — with subtle motion and interactive details that never add noise.",
+        "I help organize the idea, build the user flow, and design interfaces that support your goal and fit your users.",
       viewWork: "View work",
       contactMe: "Contact me",
       introStrip:
-        "I care about clarity first — then polish, motion, and interaction. The result is work that feels refined, sharp, and usable.",
+        "“You can't use up creativity. The more you use, the more you have.” – Maya Angelou",
 
       projectsEyebrow: "Selected Work",
       projectsTitle: "Selected projects",
       projectsText:
-        "A curated set of projects showing how I move from structure and flow to polished, implementation-aware UI.",
+        "A selection of my projects, giving you a glimpse of how I turn ideas into clear, organized, and usable interfaces.",
 
       skillsEyebrow: "What I bring",
-      skillsTitle: "Interactive skills, cleanly contained.",
+      skillsTitle: "Every step your digital product needs.",
       skillsText:
-        "A focused interactive area where you can drag the skills around. It brings back personality without adding visual noise to the full page.",
+        "Whether you need a full experience built from scratch or help with one specific part, I can work with you on what your project actually needs.",
 
       contactEyebrow: "Start a Project",
-      contactTitle: "Let’s build something amazing together.",
+      contactTitle: "Start your idea with me.",
       contactText:
-        "Have a website, app, dashboard, or UX/UI project in mind? Send the details and I’ll get back to you.",
-      clientBubble01: "“Clean and easy to follow.”",
-      clientBubble02: "“The structure finally made sense.”",
-      clientBubble03: "“Professional, clear, and thoughtful.”",
+        "If you have an idea you haven’t started yet, or a project stuck at a certain point, send me the details and I’ll help you move it forward more clearly.",
+      clientBubble01: "“Clear and easy to follow.”",
+      clientBubble02: "“The idea became more organized.”",
+      clientBubble03: "“Creative, thoughtful, and clean.”",
       formName: "Name",
       formEmail: "Email",
       formProject: "Project type",
@@ -57,14 +56,14 @@ const portfolioData = {
 
       aboutEyebrow: "About",
       aboutTitle:
-        "A designer who values clarity, restraint, and thoughtful interaction.",
+        "I design interfaces that understand the user and support the idea.",
       aboutP1:
-        "I’m Ruba Alghamdi, a UX/UI designer with a Computer Science background. I design products with attention to structure, usability, visual hierarchy, and implementation awareness.",
+        "I’m Ruba Alghamdi, a UX/UI designer with a Computer Science background. I enjoy working on digital products from the idea stage to the final interface: organizing information, building user flows, and designing screens that feel simple and enjoyable to use.",
       aboutP2:
-        "What matters most to me is not just how the screen looks, but how clearly the product communicates, flows, and works in real use.",
-      aboutTag01: "UX Research",
-      aboutTag02: "UI Design",
-      aboutTag03: "Front-End",
+        "For me, good design makes the product easier for users to understand, and better for clients to present, launch, and grow.",
+      aboutTag01: "Creative perspective",
+      aboutTag02: "Interfaces that work for you and your users",
+      aboutTag03: "Development-aware execution",
 
       backToProjects: "← Back to projects",
       roleLabel: "Role",
@@ -83,36 +82,36 @@ const portfolioData = {
 
     ar: {
       navWork: "المشاريع",
-      navSkills: "مهاراتي",
+      navSkills: "وش أقدم",
       navClients: "تواصل",
       navAbout: "عنّي",
 
       heroEyebrow: "مصممة UX/UI بخلفية في علوم الحاسب",
-      heroTitle: "واجهات نظيفة. تفكير واضح. حركة لها معنى.",
+      heroTitle: "احول فكرتك إلى تجربة رقمية يحبها المستخدم.",
       heroText:
-        "بورتفوليو يعرض المشاريع من حيث الهيكلة، القرارات التصميمية، والواجهات المصقولة، مع حركة خفيفة وتفاصيل تفاعلية تضيف بدون ما تزعج.",
+        "أساعدك في ترتيب الفكرة، بناء مسار المستخدم، وتصميم واجهات تخدم هدفك وتناسب مستخدمينك.",
       viewWork: "استعراض الأعمال",
       contactMe: "تواصل معي",
       introStrip:
-        "أهتم أولًا بالوضوح، وبعدها الصقل، الحركة، والتفاعل. النتيجة تكون تجربة مرتبة، حادة، وسهلة الاستخدام.",
+        "“ما تقدر تستهلك الإبداع. كل ما تستخدمه، كل ما صار عندك أكثر.” – مايا أنجيلو",
 
       projectsEyebrow: "أعمال مختارة",
       projectsTitle: "مشاريع مختارة",
       projectsText:
-        "مجموعة مختارة من المشاريع توضح كيف أبدأ من الهيكلة ومسارات المستخدم، ثم أحولها إلى واجهات مصقولة وقابلة للتنفيذ.",
+        "هذه مختارات من مشاريعي، تعطيك لمحة عن أسلوبي في تحويل الأفكار إلى واجهات واضحة، مرتبة، وقابلة للاستخدام.",
 
-      skillsEyebrow: "مهاراتي",
-      skillsTitle: "مهارات تفاعلية داخل مساحة نظيفة.",
+      skillsEyebrow: "وش أقدم",
+      skillsTitle: "كل خطوة تحتاجها في المنتج الرقمي.",
       skillsText:
-        "مساحة تفاعلية مركزة تقدرين تسحبين فيها المهارات وتحركينها. تضيف شخصية للموقع بدون ما تسبب زحمة بصرية في الصفحة.",
+        "سواء تحتاج بناء تجربة كاملة، أو مساعدة في خطوة معينة، أقدر أشتغل معك على الجزء اللي يخدم مشروعك فعلًا.",
 
       contactEyebrow: "ابدأ مشروعك",
-      contactTitle: "خلّينا نبني شي واضح ومبهر مع بعض.",
+      contactTitle: "ابدأ فكرتك معي.",
       contactText:
-        "عندك موقع، تطبيق، داشبورد، أو مشروع UX/UI؟ أرسل التفاصيل وبرجع لك.",
-      clientBubble01: "“نظيف وسهل المتابعة.”",
-      clientBubble02: "“الهيكلة صارت منطقية وواضحة.”",
-      clientBubble03: "“شغل احترافي، واضح، ومدروس.”",
+        "لو عندك فكرة ما بدأت، أو مشروع واقف عند نقطة معينة، أرسل لي التفاصيل وبساعدك تكملها بطريقة أوضح.",
+      clientBubble01: "“واضح وسهل المتابعة.”",
+      clientBubble02: "“الفكرة صارت أرتب.”",
+      clientBubble03: "“إبداعي، مدروس، ونظيف.”",
       formName: "الاسم",
       formEmail: "الإيميل",
       formProject: "نوع المشروع",
@@ -124,14 +123,14 @@ const portfolioData = {
       sendMessage: "إرسال الرسالة",
 
       aboutEyebrow: "عنّي",
-      aboutTitle: "مصممة تهتم بالوضوح، الاتزان، والتفاعل المدروس.",
+      aboutTitle: "أصمم واجهات تفهم المستخدم وتخدم الفكرة.",
       aboutP1:
-        "أنا ربى الغامدي، مصممة UX/UI بخلفية في علوم الحاسب. أصمم المنتجات الرقمية باهتمام بالهيكلة، سهولة الاستخدام، الهرمية البصرية، وقابلية التنفيذ.",
+        "أنا ربى الغامدي، مصممة UX/UI بخلفية في علوم الحاسب. أحب أشتغل على المنتجات الرقمية من مرحلة الفكرة إلى الواجهة النهائية: أرتب المعلومات، أبني مسارات المستخدم، وأصمم شاشات بسيطة وممتعة في الاستخدام.",
       aboutP2:
-        "بالنسبة لي، التصميم مو بس شكل الشاشة. الأهم هو كيف المنتج يوصل فكرته بوضوح، كيف يتحرك المستخدم داخله، وكيف يشتغل في الاستخدام الحقيقي.",
-      aboutTag01: "بحث تجربة المستخدم",
-      aboutTag02: "تصميم واجهات",
-      aboutTag03: "تطوير أمامي",
+        "بالنسبة لي، التصميم الجيد يخلي المنتج أسهل فهمًا للمستخدم، وأفضل للعميل في العرض، الإطلاق، والتطوير.",
+      aboutTag01: "نظرة ابداعية",
+      aboutTag02: "واجهات تخدمك وتعجب مستخدميك",
+      aboutTag03: "وعي برمجي بالتنفيذ",
 
       backToProjects: "العودة للمشاريع",
       roleLabel: "الدور",
@@ -150,22 +149,25 @@ const portfolioData = {
   },
 
   skills: [
-    { en: "User flows", ar: "مسارات المستخدم" },
-    { en: "Wireframes", ar: "وايرفريم" },
-    { en: "Prototypes", ar: "نماذج تفاعلية" },
-    { en: "UI Design", ar: "تصميم واجهات" },
-    { en: "UX Research", ar: "بحث تجربة المستخدم" },
+    { en: "UX Thinking", ar: "تفكير UX" },
+    { en: "User Research", ar: "بحث المستخدمين" },
+    { en: "User Flows", ar: "مسارات المستخدم" },
     { en: "Information Architecture", ar: "هيكلة المعلومات" },
-    { en: "Design Systems", ar: "أنظمة التصميم" },
+    { en: "Wireframes", ar: "وايرفريم" },
     { en: "Screen Inventory", ar: "حصر الشاشات" },
+    { en: "UI Design", ar: "تصميم واجهات" },
+    { en: "Design Systems", ar: "أنظمة التصميم" },
+    { en: "Visual Direction", ar: "اتجاه بصري" },
+    { en: "Prototypes", ar: "نماذج تفاعلية" },
+    { en: "Responsive Design", ar: "تصميم متجاوب" },
+    { en: "Problem Solving", ar: "حل المشكلات" },
+    { en: "Presentation", ar: "العرض" },
     { en: "HTML", ar: "HTML" },
     { en: "CSS", ar: "CSS" },
     { en: "SwiftUI", ar: "SwiftUI" },
     { en: "Figma", ar: "Figma" },
-    { en: "Problem Solving", ar: "حل المشكلات" },
-    { en: "Visual Direction", ar: "اتجاه بصري" },
-    { en: "Responsive Design", ar: "تصميم متجاوب" },
-    { en: "Presentations", ar: "عروض تقديمية" },
+    { en: "Wix", ar: "Wix" },
+    { en: "Shopify", ar: "Shopify" },
   ],
 
   projects: [
@@ -191,11 +193,7 @@ const portfolioData = {
         en: "Research, Budget Flow, UI Screens, Prototype",
         ar: "بحث، مسار الميزانية، شاشات واجهة، نموذج تفاعلي",
       },
-      tags: [
-        // { en: "Finance", ar: "مالي" },
-        // { en: "Behavioral Support", ar: "دعم سلوكي" },
-        // { en: "SwiftUI", ar: "SwiftUI" },
-      ],
+      tags: [],
       cover: "assets/budgie1.png",
       images: [
         {
@@ -239,11 +237,7 @@ const portfolioData = {
         en: "User Flow, Service Concept, UI Screens, Prototype",
         ar: "مسار المستخدم، فكرة الخدمة، شاشات واجهة، نموذج تفاعلي",
       },
-      tags: [
-        // { en: "Delivery", ar: "توصيل" },
-        // { en: "Community", ar: "مجتمع" },
-        // { en: "Figma", ar: "Figma" },
-      ],
+      tags: [],
       cover: "assets/gareeb1.png",
       images: [
         {
@@ -287,11 +281,7 @@ const portfolioData = {
         en: "IA, User Flow, Design System, UI Screens",
         ar: "هيكلة معلومات، مسار مستخدم، نظام تصميم، شاشات واجهة",
       },
-      tags: [
-        // { en: "Women’s Health", ar: "صحة نسائية" },
-        // { en: "Tracking", ar: "تتبع" },
-        // { en: "Figma", ar: "Figma" },
-      ],
+      tags: [],
       cover: "assets/qamareya1.png",
       images: [
         {
