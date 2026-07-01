@@ -1,6 +1,6 @@
 body.arabic {
   direction: rtl;
-  font-family: "Alexandria", "Inter", system-ui, sans-serif;
+  font-family: "Baloo Bhaijaan 2", "Inter", system-ui, sans-serif;
 }
 
 body.arabic .hero-copy,
@@ -47,7 +47,7 @@ body.arabic .bubble-c {
 /* Arabic header layout */
 body.arabic {
   direction: rtl;
-  font-family: "Alexandria", "Inter", system-ui, sans-serif;
+  font-family: "Baloo Bhaijaan 2", "Inter", system-ui, sans-serif;
 }
 
 body.arabic .site-header .container {

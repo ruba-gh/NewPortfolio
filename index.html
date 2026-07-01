@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -74,6 +74,18 @@
 
     <main>
       <section class="hero video-hero main-section" id="home">
+        <video
+          class="hero-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          aria-hidden="true"
+        >
+          <source src="/assets/hero-video.mp4" type="video/mp4" />
+        </video>
+
         <div class="hero-bg-fallback" aria-hidden="true"></div>
         <div class="hero-bg-overlay" aria-hidden="true"></div>
 
@@ -181,7 +193,7 @@
         </div>
       </section>
 
-      <section class="section contact-section main-section" id="contact">
+      <!-- <section class="section contact-section main-section" id="contact">
         <div class="container contact-layout">
           <div class="contact-copy reveal">
             <span class="eyebrow" data-i18n="contactEyebrow">ابدأ مشروعك</span>
@@ -270,7 +282,7 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
