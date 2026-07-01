@@ -305,5 +305,49 @@ const portfolioData = {
         "https://www.figma.com/proto/NP6rBjgIC6Yl13LUZHLMnp/qamaryah?node-id=11-10590&t=DwEIy1Z7t2w6aRK1-1",
       presentationUrl: "assets/qamareyaPresentation.pdf",
     },
+    {
+      id: "day-diamond-app",
+      type: { en: "Gamified Lifestyle App", ar: "تطبيق أسلوب حياة تفاعلي" },
+      title: { en: "Day Diamond", ar: "الماس اليوم" },
+      cardText: {
+        en: "A playful app that helps users spend their free time more intentionally and reduce screen time through real-world challenges.",
+        ar: "تطبيق تفاعلي يساعد المستخدمين على استثمار وقت فراغهم وتقليل وقت الشاشة من خلال تحديات واقعية ممتعة.",
+      },
+      detailDesc: {
+        en: "A gamified lifestyle app designed to turn ordinary free moments into valuable experiences through challenges, points, and leaderboard motivation.",
+        ar: "تطبيق أسلوب حياة قائم على التلعيب يحوّل لحظات الفراغ اليومية إلى تجارب قيّمة من خلال التحديات، النقاط، ولوحة الصدارة.",
+      },
+      overview: {
+        en: "Day Diamond is a concept born from a simple observation: free time often disappears without us noticing. Many people do not intentionally choose to spend hours on their phones; it slowly happens because scrolling is the easiest option available. The app approaches this problem with a lighter mindset by making better use of time feel playful, approachable, and rewarding. Through short real-world challenges, points, and leaderboard motivation, Day Diamond encourages users to see small free moments as something valuable. The name reflects this idea: a day diamond is a valuable moment hidden inside an ordinary day.",
+        ar: "بدأت فكرة الماس اليوم من ملاحظة بسيطة: وقت الفراغ غالبًا يختفي بدون ما ننتبه. كثير من الناس ما يختارون قضاء ساعات طويلة على الجوال عمدًا، لكنه يحدث تدريجيًا لأن التمرير هو الخيار الأسهل. يتعامل التطبيق مع هذه المشكلة بطريقة أخف وأقرب للمستخدم، حيث يجعل استثمار الوقت ممتعًا، بسيطًا، ومحفزًا. من خلال تحديات واقعية قصيرة، نقاط، ولوحة صدارة، يشجع الماس اليوم المستخدمين على رؤية اللحظات الصغيرة في يومهم كشيء قيّم. ويرتبط الاسم بهذه الفكرة: ألماسة اليوم هي لحظة ثمينة مخفية داخل يوم عادي.",
+      },
+      role: { en: "UX/UI Design", ar: "تصميم تجربة وواجهات" },
+      tools: ["Figma"],
+      deliverables: {
+        en: "Research, User Flow, Design System, UI Screens, Prototype",
+        ar: "بحث، مسار مستخدم، نظام تصميم، شاشات واجهة، نموذج تفاعلي",
+      },
+      tags: [],
+      cover: "assets/daydiamond1.png",
+      images: [
+        {
+          src: "assets/daydiamond.png",
+          alt: {
+            en: "Day Diamond app screen",
+            ar: "شاشة تطبيق الماس اليوم",
+          },
+        },
+        {
+          src: "assets/daydiamond2.png",
+          alt: {
+            en: "Second Day Diamond app screen",
+            ar: "الشاشة الثانية لتطبيق الماس اليوم",
+          },
+        },
+      ],
+      prototypeUrl:
+        "https://www.figma.com/proto/xZRsHOdtHK8E8LQqRAsPj5/DayDiamond?node-id=82-1100&viewport=39%2C758%2C0.18&t=KjpZbkZ2kS2Lxmf8-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=82%3A1085&page-id=0%3A1",
+      presentationUrl: "assets/DayDiamondPresentation.pdf",
+    },
   ],
 };
