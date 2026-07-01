@@ -328,17 +328,17 @@ const portfolioData = {
         ar: "بحث، مسار مستخدم، نظام تصميم، شاشات واجهة، نموذج تفاعلي",
       },
       tags: [],
-      cover: "assets/daydiamond1.png",
+      cover: "assets/DayDiamond.png",
       images: [
         {
-          src: "assets/daydiamond.png",
+          src: "assets/DayDiamond.png",
           alt: {
             en: "Day Diamond app screen",
             ar: "شاشة تطبيق الماس اليوم",
           },
         },
         {
-          src: "assets/daydiamond2.png",
+          src: "assets/DayDiamond2.png",
           alt: {
             en: "Second Day Diamond app screen",
             ar: "الشاشة الثانية لتطبيق الماس اليوم",
